@@ -1,0 +1,20 @@
+p, admin:insert, campaign, read
+p, admin:insert, campaign, write
+#p, admin:insert, target_group, read
+#p, admin:insert, target_group, write
+#p, admin:insert, total_prints, read
+p, admin:direct_mail, campaign, read
+p, admin:direct_mail, campaign, write
+
+#p, viewer, insert, campaign, read
+#p, viewer, direct_mail, campaign, read
+#p, viewer, insert, total_prints, read
+
+#p, logistician, insert, distribution_by_segment, read
+
+# ACL
+#p, bob, insert, distribution_by_segment, read
+
+# RBAC
+g, alice, admin:insert
+g, bob, admin:direct_mail
